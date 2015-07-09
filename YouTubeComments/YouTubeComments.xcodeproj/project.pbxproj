@@ -15,6 +15,7 @@
 		CFE1AFDA1B4EC08C007ADDC7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFE1AFD81B4EC08C007ADDC7 /* LaunchScreen.xib */; };
 		CFE1AFE61B4EC08C007ADDC7 /* YouTubeCommentsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE1AFE51B4EC08C007ADDC7 /* YouTubeCommentsTests.m */; };
 		CFE1AFF11B4F364D007ADDC7 /* YTPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE1AFF01B4F364D007ADDC7 /* YTPlayerView.m */; };
+		CFE1AFF41B4F3CE6007ADDC7 /* YTPlayerView-iframe-player.html in Resources */ = {isa = PBXBuildFile; fileRef = CFE1AFF31B4F3CE6007ADDC7 /* YTPlayerView-iframe-player.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		CFE1AFE51B4EC08C007ADDC7 /* YouTubeCommentsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YouTubeCommentsTests.m; sourceTree = "<group>"; };
 		CFE1AFEF1B4F364D007ADDC7 /* YTPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTPlayerView.h; sourceTree = "<group>"; };
 		CFE1AFF01B4F364D007ADDC7 /* YTPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTPlayerView.m; sourceTree = "<group>"; };
+		CFE1AFF31B4F3CE6007ADDC7 /* YTPlayerView-iframe-player.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "YTPlayerView-iframe-player.html"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 		CFE1AFBD1B4EC08C007ADDC7 = {
 			isa = PBXGroup;
 			children = (
+				CFE1AFF31B4F3CE6007ADDC7 /* YTPlayerView-iframe-player.html */,
 				CFE1AFC81B4EC08C007ADDC7 /* YouTubeComments */,
 				CFE1AFE21B4EC08C007ADDC7 /* YouTubeCommentsTests */,
 				CFE1AFC71B4EC08C007ADDC7 /* Products */,
@@ -204,6 +207,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFE1AFF41B4F3CE6007ADDC7 /* YTPlayerView-iframe-player.html in Resources */,
 				CFE1AFD51B4EC08C007ADDC7 /* Main.storyboard in Resources */,
 				CFE1AFDA1B4EC08C007ADDC7 /* LaunchScreen.xib in Resources */,
 				CFE1AFD71B4EC08C007ADDC7 /* Images.xcassets in Resources */,
