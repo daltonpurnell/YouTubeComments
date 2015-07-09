@@ -157,9 +157,9 @@ static NSURL* NSURLByAppendingQueryParameters(NSURL* URL, NSDictionary* queryPar
         // If the "name" element was found then store it.
         [self.dictTempDataStorage setObject:[NSString stringWithString:self.foundValue] forKey:@"name"];
     }
-    else if ([elementName isEqualToString:@"title"]){
-        // If the "title" element was found then store it.
-        [self.dictTempDataStorage setObject:[NSString stringWithString:self.foundValue] forKey:@"title"];
+    else if ([elementName isEqualToString:@"content"]){
+        // If the "content" element was found then store it.
+        [self.dictTempDataStorage setObject:[NSString stringWithString:self.foundValue] forKey:@"content"];
     }
     
     // Clear the mutable string.
