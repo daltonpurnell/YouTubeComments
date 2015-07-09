@@ -138,7 +138,7 @@ static NSURL* NSURLByAppendingQueryParameters(NSURL* URL, NSDictionary* queryPar
 
 -(void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict{
     
-    // If the current element name is "id" then initialize the temporary dictionary.
+    // If the current element name is "feed" then initialize the temporary dictionary.
     if ([elementName isEqualToString:@"feed"]) {
         self.dictTempDataStorage = [[NSMutableDictionary alloc] init];
     }
