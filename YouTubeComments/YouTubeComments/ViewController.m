@@ -68,8 +68,6 @@ static NSURL* NSURLByAppendingQueryParameters(NSURL* URL, NSDictionary* queryPar
     // Do any additional setup after loading the view, typically from a nib.
     
     self.TableView.hidden = YES;
-    self.TableView.dataSource = self;
-    self.TableView.delegate = self;
     self.viewCommentsButton.hidden = NO;
 }
 
@@ -178,15 +176,10 @@ static NSURL* NSURLByAppendingQueryParameters(NSURL* URL, NSDictionary* queryPar
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"Cell"];
-        cell.accessoryType = UITableViewCellAccessoryNone;
-        cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    }
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
     
-    cell.textLabel.text = [[self.commentsDataArray objectAtIndex:indexPath.row] objectForKey:@"id"];
-    cell.detailTextLabel.text = [[self.commentsDataArray objectAtIndex:indexPath.row] objectForKey:@"id"];
+    cell.textLabel.text = [[self.commentsDataArray objectAtIndex:indexPath.row] objectForKey:@"name"];
+    cell.detailTextLabel.text = [[self.commentsDataArray objectAtIndex:indexPath.row] objectForKey:@"content"];
     
     return cell;
 }
