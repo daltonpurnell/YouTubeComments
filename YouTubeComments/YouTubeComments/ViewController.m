@@ -170,7 +170,7 @@ static NSURL* NSURLByAppendingQueryParameters(NSURL* URL, NSDictionary* queryPar
 }
 
 -(void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string{
-    // Store the found characters if only we're interested in the current element.
+    // Store the found characters if the current element is one of the ones we want
     if ([self.currentElement isEqualToString:@"name"] ||
         [self.currentElement isEqualToString:@"content"]) {
         
