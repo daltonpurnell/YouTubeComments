@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="2po-CU-CEr">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mv3-xz-aBO">
+                                <rect key="frame" x="16" y="379" width="568" height="30"/>
+                                <state key="normal" title="View Comments">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendRequest:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="PUs-U6-LOr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="mv3-xz-aBO" secondAttribute="bottom" constant="191" id="2Yg-sf-ZCG"/>
+                            <constraint firstItem="2po-CU-CEr" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Arf-14-NTX"/>
+                            <constraint firstAttribute="centerX" secondItem="2po-CU-CEr" secondAttribute="centerX" id="Dtr-Zg-s38"/>
+                            <constraint firstItem="mv3-xz-aBO" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="Fe0-3W-aOb"/>
+                            <constraint firstAttribute="centerY" secondItem="2po-CU-CEr" secondAttribute="centerY" id="Gzb-9H-Zp4"/>
+                            <constraint firstAttribute="centerX" secondItem="mv3-xz-aBO" secondAttribute="centerX" id="dkc-a4-rYt"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="2po-CU-CEr" secondAttribute="bottom" id="gzh-kD-Smg"/>
+                            <constraint firstItem="mv3-xz-aBO" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="raW-jA-ZYM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="TableView" destination="2po-CU-CEr" id="Pce-8z-xCy"/>
+                        <outlet property="viewCommentsButton" destination="mv3-xz-aBO" id="Sed-dN-mAW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
