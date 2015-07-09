@@ -149,8 +149,8 @@ static NSURL* NSURLByAppendingQueryParameters(NSURL* URL, NSDictionary* queryPar
 
 -(void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName{
     
-    if ([elementName isEqualToString:@"content"]) {
-        // If the closing element is equal to "content" then the all the data of a comment has been parsed and the dictionary should be added to the comments data array.
+    if ([elementName isEqualToString:@"entry"]) {
+        // If the closing element is equal to "entry" then the all the data of a comment has been parsed and the dictionary should be added to the comments data array.
         [self.commentsDataArray addObject:[[NSDictionary alloc] initWithDictionary:self.dictTempDataStorage]];
     }
     else if ([elementName isEqualToString:@"name"]){
