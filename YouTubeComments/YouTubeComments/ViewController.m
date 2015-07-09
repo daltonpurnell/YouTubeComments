@@ -74,6 +74,7 @@ static NSURL* NSURLByAppendingQueryParameters(NSURL* URL, NSDictionary* queryPar
     self.TableView.dataSource = self;
     self.TableView.delegate = self;
     
+    [Appearance initializeAppearanceDefaults];
     
     // load video into player view
     [self.playerView loadWithVideoId:@"KYVdf5xyD8I"];

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "YTPlayerView.h"
+#import "Appearance.h"
 
 @interface ViewController : UIViewController
 

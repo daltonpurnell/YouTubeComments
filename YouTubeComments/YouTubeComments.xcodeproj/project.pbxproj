@@ -16,6 +16,7 @@
 		CFE1AFE61B4EC08C007ADDC7 /* YouTubeCommentsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE1AFE51B4EC08C007ADDC7 /* YouTubeCommentsTests.m */; };
 		CFE1AFF11B4F364D007ADDC7 /* YTPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE1AFF01B4F364D007ADDC7 /* YTPlayerView.m */; };
 		CFE1AFF41B4F3CE6007ADDC7 /* YTPlayerView-iframe-player.html in Resources */ = {isa = PBXBuildFile; fileRef = CFE1AFF31B4F3CE6007ADDC7 /* YTPlayerView-iframe-player.html */; };
+		CFE1AFF71B4F3DE9007ADDC7 /* Appearance.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE1AFF61B4F3DE9007ADDC7 /* Appearance.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,8 @@
 		CFE1AFEF1B4F364D007ADDC7 /* YTPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTPlayerView.h; sourceTree = "<group>"; };
 		CFE1AFF01B4F364D007ADDC7 /* YTPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTPlayerView.m; sourceTree = "<group>"; };
 		CFE1AFF31B4F3CE6007ADDC7 /* YTPlayerView-iframe-player.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "YTPlayerView-iframe-player.html"; sourceTree = "<group>"; };
+		CFE1AFF51B4F3DE9007ADDC7 /* Appearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Appearance.h; sourceTree = "<group>"; };
+		CFE1AFF61B4F3DE9007ADDC7 /* Appearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Appearance.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +90,8 @@
 		CFE1AFC81B4EC08C007ADDC7 /* YouTubeComments */ = {
 			isa = PBXGroup;
 			children = (
+				CFE1AFF51B4F3DE9007ADDC7 /* Appearance.h */,
+				CFE1AFF61B4F3DE9007ADDC7 /* Appearance.m */,
 				CFE1AFCD1B4EC08C007ADDC7 /* AppDelegate.h */,
 				CFE1AFCE1B4EC08C007ADDC7 /* AppDelegate.m */,
 				CFE1AFD01B4EC08C007ADDC7 /* ViewController.h */,
@@ -232,6 +237,7 @@
 				CFE1AFCF1B4EC08C007ADDC7 /* AppDelegate.m in Sources */,
 				CFE1AFF11B4F364D007ADDC7 /* YTPlayerView.m in Sources */,
 				CFE1AFCC1B4EC08C007ADDC7 /* main.m in Sources */,
+				CFE1AFF71B4F3DE9007ADDC7 /* Appearance.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
