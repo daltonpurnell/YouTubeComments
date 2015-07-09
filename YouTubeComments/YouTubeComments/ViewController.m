@@ -18,6 +18,7 @@
 @property (nonatomic, strong) NSString *currentElement;
 @property (weak, nonatomic) IBOutlet UITableView *TableView;
 @property (weak, nonatomic) IBOutlet UIButton *viewCommentsButton;
+@property (weak, nonatomic) IBOutlet YTPlayerView *playerView;
 
 @end
 
@@ -69,8 +70,13 @@ static NSURL* NSURLByAppendingQueryParameters(NSURL* URL, NSDictionary* queryPar
     
     self.TableView.hidden = YES;
     self.viewCommentsButton.hidden = NO;
+    self.playerView.hidden = NO;
     self.TableView.dataSource = self;
     self.TableView.delegate = self;
+    
+    
+    // load video into player view
+    [self.playerView loadWithVideoId:@"KYVdf5xyD8I"];
 }
 
 
@@ -78,6 +84,7 @@ static NSURL* NSURLByAppendingQueryParameters(NSURL* URL, NSDictionary* queryPar
 {
     self.TableView.hidden = NO;
     self.viewCommentsButton.hidden = YES;
+    self.playerView.hidden = YES;
     
     NSURLSessionConfiguration* sessionConfig = [NSURLSessionConfiguration defaultSessionConfiguration];
     NSURLSession* session = [NSURLSession sessionWithConfiguration:sessionConfig delegate:nil delegateQueue:nil];

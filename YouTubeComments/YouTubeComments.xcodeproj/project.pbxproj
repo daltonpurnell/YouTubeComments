@@ -14,6 +14,7 @@
 		CFE1AFD71B4EC08C007ADDC7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFE1AFD61B4EC08C007ADDC7 /* Images.xcassets */; };
 		CFE1AFDA1B4EC08C007ADDC7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFE1AFD81B4EC08C007ADDC7 /* LaunchScreen.xib */; };
 		CFE1AFE61B4EC08C007ADDC7 /* YouTubeCommentsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE1AFE51B4EC08C007ADDC7 /* YouTubeCommentsTests.m */; };
+		CFE1AFF11B4F364D007ADDC7 /* YTPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE1AFF01B4F364D007ADDC7 /* YTPlayerView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		CFE1AFDF1B4EC08C007ADDC7 /* YouTubeCommentsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YouTubeCommentsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFE1AFE41B4EC08C007ADDC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFE1AFE51B4EC08C007ADDC7 /* YouTubeCommentsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YouTubeCommentsTests.m; sourceTree = "<group>"; };
+		CFE1AFEF1B4F364D007ADDC7 /* YTPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTPlayerView.h; sourceTree = "<group>"; };
+		CFE1AFF01B4F364D007ADDC7 /* YTPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTPlayerView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				CFE1AFCE1B4EC08C007ADDC7 /* AppDelegate.m */,
 				CFE1AFD01B4EC08C007ADDC7 /* ViewController.h */,
 				CFE1AFD11B4EC08C007ADDC7 /* ViewController.m */,
+				CFE1AFEF1B4F364D007ADDC7 /* YTPlayerView.h */,
+				CFE1AFF01B4F364D007ADDC7 /* YTPlayerView.m */,
 				CFE1AFD31B4EC08C007ADDC7 /* Main.storyboard */,
 				CFE1AFD61B4EC08C007ADDC7 /* Images.xcassets */,
 				CFE1AFD81B4EC08C007ADDC7 /* LaunchScreen.xib */,
@@ -221,6 +226,7 @@
 			files = (
 				CFE1AFD21B4EC08C007ADDC7 /* ViewController.m in Sources */,
 				CFE1AFCF1B4EC08C007ADDC7 /* AppDelegate.m in Sources */,
+				CFE1AFF11B4F364D007ADDC7 /* YTPlayerView.m in Sources */,
 				CFE1AFCC1B4EC08C007ADDC7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
