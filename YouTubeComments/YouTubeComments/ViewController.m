@@ -69,6 +69,8 @@ static NSURL* NSURLByAppendingQueryParameters(NSURL* URL, NSDictionary* queryPar
     
     self.TableView.hidden = YES;
     self.viewCommentsButton.hidden = NO;
+    self.TableView.dataSource = self;
+    self.TableView.delegate = self;
 }
 
 
@@ -98,16 +100,17 @@ static NSURL* NSURLByAppendingQueryParameters(NSURL* URL, NSDictionary* queryPar
             // Success
             NSLog(@"URL Session Task Succeeded: HTTP %ld", ((NSHTTPURLResponse*)response).statusCode);
             
+            if (data != nil) {
+                // initialize xml parser, set its delegate, and start parsing:
+                self.xmlParser = [[NSXMLParser alloc] initWithData:data];
+                self.xmlParser.delegate = self;
             
-            // initialize xml parser, set its delegate, and start parsing:
-            self.xmlParser = [[NSXMLParser alloc] initWithData:data];
-            self.xmlParser.delegate = self;
-            
-            self.foundValue = [[NSMutableString alloc] init];
+                self.foundValue = [[NSMutableString alloc] init];
             
             // Start parsing.
-            [self.xmlParser parse];
-            
+                [self.xmlParser parse];
+            }
+        
         }
         else {
             // Failure
@@ -166,6 +169,17 @@ static NSURL* NSURLByAppendingQueryParameters(NSURL* URL, NSDictionary* queryPar
     [self.foundValue setString:@""];
 }
 
+-(void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string{
+    // Store the found characters if only we're interested in the current element.
+    if ([self.currentElement isEqualToString:@"name"] ||
+        [self.currentElement isEqualToString:@"content"]) {
+        
+        if (![string isEqualToString:@"\n"]) {
+            [self.foundValue appendString:string];
+        }
+    }
+}
+
 #pragma mark - table view delegate and datasource methods
 
 // populate table view cells with parsed xml values
@@ -182,6 +196,11 @@ static NSURL* NSURLByAppendingQueryParameters(NSURL* URL, NSDictionary* queryPar
     cell.detailTextLabel.text = [[self.commentsDataArray objectAtIndex:indexPath.row] objectForKey:@"content"];
     
     return cell;
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    return 100;
 }
 
 
