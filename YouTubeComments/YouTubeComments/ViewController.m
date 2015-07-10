@@ -72,6 +72,7 @@ static NSURL* NSURLByAppendingQueryParameters(NSURL* URL, NSDictionary* queryPar
     self.TableView.hidden = YES;
     self.viewCommentsButton.hidden = NO;
     self.playerView.hidden = NO;
+    self.hideCommentsButton.hidden = YES;
     
     self.TableView.dataSource = self;
     self.TableView.delegate = self;
@@ -88,6 +89,7 @@ static NSURL* NSURLByAppendingQueryParameters(NSURL* URL, NSDictionary* queryPar
 {
     self.TableView.hidden = NO;
     self.viewCommentsButton.hidden = YES;
+    self.hideCommentsButton.hidden = NO;
 
     self.title = @"Comments";
     
@@ -137,6 +139,7 @@ static NSURL* NSURLByAppendingQueryParameters(NSURL* URL, NSDictionary* queryPar
     self.TableView.hidden = YES;
     self.playerView.hidden = NO;
     self.viewCommentsButton.hidden = NO;
+    self.hideCommentsButton.hidden = YES;
 }
 
 
