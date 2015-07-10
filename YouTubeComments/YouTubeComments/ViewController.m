@@ -19,6 +19,7 @@
 @property (weak, nonatomic) IBOutlet UITableView *TableView;
 @property (weak, nonatomic) IBOutlet UIButton *viewCommentsButton;
 @property (weak, nonatomic) IBOutlet YTPlayerView *playerView;
+@property (weak, nonatomic) IBOutlet UIButton *hideCommentsButton;
 
 @end
 
@@ -71,8 +72,10 @@ static NSURL* NSURLByAppendingQueryParameters(NSURL* URL, NSDictionary* queryPar
     self.TableView.hidden = YES;
     self.viewCommentsButton.hidden = NO;
     self.playerView.hidden = NO;
+    
     self.TableView.dataSource = self;
     self.TableView.delegate = self;
+    
     
     [Appearance initializeAppearanceDefaults];
     
@@ -85,7 +88,8 @@ static NSURL* NSURLByAppendingQueryParameters(NSURL* URL, NSDictionary* queryPar
 {
     self.TableView.hidden = NO;
     self.viewCommentsButton.hidden = YES;
-    self.playerView.hidden = YES;
+
+    self.title = @"Comments";
     
     NSURLSessionConfiguration* sessionConfig = [NSURLSessionConfiguration defaultSessionConfiguration];
     NSURLSession* session = [NSURLSession sessionWithConfiguration:sessionConfig delegate:nil delegateQueue:nil];
@@ -128,6 +132,12 @@ static NSURL* NSURLByAppendingQueryParameters(NSURL* URL, NSDictionary* queryPar
     [task resume];
 }
 
+- (IBAction)hideCommentsButtonTapped:(id)sender {
+    
+    self.TableView.hidden = YES;
+    self.playerView.hidden = NO;
+    self.viewCommentsButton.hidden = NO;
+}
 
 
 #pragma mark - XML Parser Delegate Methods

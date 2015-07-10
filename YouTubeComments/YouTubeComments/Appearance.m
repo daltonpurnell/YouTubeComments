@@ -34,6 +34,8 @@
                                                         NSFontAttributeName,
                                                         nil]];
     
+    [[UIBarButtonItem appearance] setTintColor:[UIColor whiteColor]];
+    
 }
 
 
