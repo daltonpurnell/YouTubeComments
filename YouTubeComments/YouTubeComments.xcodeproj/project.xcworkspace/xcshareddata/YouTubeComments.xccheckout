@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>CB0DBC81-C5A5-4D41-BC23-CA06F988E309</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>YouTubeComments</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>65C59053B6680CA66B1FF6CE699EC00EB8E71C28</key>
 		<string>https://github.com/daltonpurnell/YouTubeComments.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>YouTubeComments/YouTubeComments.xcodeproj/project.xcworkspace</string>
+	<string>YouTubeComments/YouTubeComments.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>65C59053B6680CA66B1FF6CE699EC00EB8E71C28</key>

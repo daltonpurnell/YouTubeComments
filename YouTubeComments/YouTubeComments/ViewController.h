@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "YTPlayerView.h"
 #import "Appearance.h"
+#import "CommentCell.h"
 
 @interface ViewController : UIViewController
 
