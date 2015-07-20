@@ -134,6 +134,7 @@ static NSURL* NSURLByAppendingQueryParameters(NSURL* URL, NSDictionary* queryPar
     [task resume];
 }
 
+
 - (IBAction)hideCommentsButtonTapped:(id)sender {
     
     self.TableView.hidden = YES;
@@ -202,6 +203,8 @@ static NSURL* NSURLByAppendingQueryParameters(NSURL* URL, NSDictionary* queryPar
             [self.foundValue appendString:string];
         }
     }
+    
+    [self.TableView reloadData];
 }
 
 #pragma mark - table view delegate and datasource methods
