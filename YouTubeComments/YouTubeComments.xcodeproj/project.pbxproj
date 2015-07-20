@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CF53BFDA1B5468B4009AEC23 /* CommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CF53BFD91B5468B4009AEC23 /* CommentCell.m */; };
 		CFE1AFCC1B4EC08C007ADDC7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE1AFCB1B4EC08C007ADDC7 /* main.m */; };
 		CFE1AFCF1B4EC08C007ADDC7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE1AFCE1B4EC08C007ADDC7 /* AppDelegate.m */; };
 		CFE1AFD21B4EC08C007ADDC7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE1AFD11B4EC08C007ADDC7 /* ViewController.m */; };
@@ -31,8 +30,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CF53BFD81B5468B4009AEC23 /* CommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentCell.h; sourceTree = "<group>"; };
-		CF53BFD91B5468B4009AEC23 /* CommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentCell.m; sourceTree = "<group>"; };
 		CFE1AFC61B4EC08C007ADDC7 /* YouTubeComments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouTubeComments.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFE1AFCA1B4EC08C007ADDC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFE1AFCB1B4EC08C007ADDC7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -99,8 +96,6 @@
 				CFE1AFCE1B4EC08C007ADDC7 /* AppDelegate.m */,
 				CFE1AFD01B4EC08C007ADDC7 /* ViewController.h */,
 				CFE1AFD11B4EC08C007ADDC7 /* ViewController.m */,
-				CF53BFD81B5468B4009AEC23 /* CommentCell.h */,
-				CF53BFD91B5468B4009AEC23 /* CommentCell.m */,
 				CFE1AFEF1B4F364D007ADDC7 /* YTPlayerView.h */,
 				CFE1AFF01B4F364D007ADDC7 /* YTPlayerView.m */,
 				CFE1AFD31B4EC08C007ADDC7 /* Main.storyboard */,
@@ -239,7 +234,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFE1AFD21B4EC08C007ADDC7 /* ViewController.m in Sources */,
-				CF53BFDA1B5468B4009AEC23 /* CommentCell.m in Sources */,
 				CFE1AFCF1B4EC08C007ADDC7 /* AppDelegate.m in Sources */,
 				CFE1AFF11B4F364D007ADDC7 /* YTPlayerView.m in Sources */,
 				CFE1AFCC1B4EC08C007ADDC7 /* main.m in Sources */,
