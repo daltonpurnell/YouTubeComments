@@ -150,7 +150,6 @@ static NSURL* NSURLByAppendingQueryParameters(NSURL* URL, NSDictionary* queryPar
     self.commentsDataArray = [[NSMutableArray alloc] init];
 }
 
-
 -(void)parserDidEndDocument:(NSXMLParser *)parser{
     // when the parsing is finished, reload table view
     [self.TableView reloadData];
@@ -169,6 +168,8 @@ static NSURL* NSURLByAppendingQueryParameters(NSURL* URL, NSDictionary* queryPar
     
     // store the current element.
     self.currentElement = elementName;
+    
+    [self.TableView reloadData];
 }
 
 -(void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName{
@@ -188,6 +189,8 @@ static NSURL* NSURLByAppendingQueryParameters(NSURL* URL, NSDictionary* queryPar
     
     // Clear the mutable string.
     [self.foundValue setString:@""];
+    
+    [self.TableView reloadData];
 }
 
 -(void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string{
@@ -210,14 +213,7 @@ static NSURL* NSURLByAppendingQueryParameters(NSURL* URL, NSDictionary* queryPar
     return self.commentsDataArray.count;
 }
 
-//-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
-//    
-//    cell.textLabel.text = [[self.commentsDataArray objectAtIndex:indexPath.row] objectForKey:@"name"];
-//    cell.detailTextLabel.text = [[self.commentsDataArray objectAtIndex:indexPath.row] objectForKey:@"content"];
-//    
-//    return cell;
-//}
+
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
@@ -227,7 +223,6 @@ static NSURL* NSURLByAppendingQueryParameters(NSURL* URL, NSDictionary* queryPar
     
     return cell;
 }
-
 
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
