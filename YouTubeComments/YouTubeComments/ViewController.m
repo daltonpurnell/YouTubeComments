@@ -244,7 +244,7 @@ static NSURL* NSURLByAppendingQueryParameters(NSURL* URL, NSDictionary* queryPar
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
 
-    cell.textLabel.text = [[self.commentsDataArray objectAtIndex:indexPath.row] objectForKey:@"name"];
+    cell.textLabel.text = [[self.commentsDataArray objectAtIndex:indexPath.row] objectForKey:@"name"];    
     cell.detailTextLabel.text = [[self.commentsDataArray objectAtIndex:indexPath.row] objectForKey:@"content"];
     
     return cell;
