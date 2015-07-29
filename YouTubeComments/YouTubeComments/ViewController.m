@@ -77,6 +77,29 @@ static NSURL* NSURLByAppendingQueryParameters(NSURL* URL, NSDictionary* queryPar
     self.TableView.dataSource = self;
     self.TableView.delegate = self;
     
+    self.view.backgroundColor = [UIColor colorWithRed:233/255.0 green:236/255.0 blue:243/255.0 alpha:1];
+    
+    // round corners on view comments button
+    self.viewCommentsButton.clipsToBounds = YES;
+    self.viewCommentsButton.layer.cornerRadius = 3/2.0f;
+    
+    // create drop shadow for view comments button
+    self.viewCommentsButton.layer.shadowColor = [UIColor grayColor].CGColor;
+    self.viewCommentsButton.layer.shadowOffset = CGSizeMake(0, 0.6);
+    self.viewCommentsButton.layer.shadowOpacity = 1;
+    self.viewCommentsButton.layer.shadowRadius = 0.6;
+    self.viewCommentsButton.clipsToBounds = NO;
+
+    // round corners on hide comments button
+    self.hideCommentsButton.clipsToBounds = YES;
+    self.hideCommentsButton.layer.cornerRadius = 3/2.0f;
+    
+    // create drop shadow for hide comments button
+    self.hideCommentsButton.layer.shadowColor = [UIColor grayColor].CGColor;
+    self.hideCommentsButton.layer.shadowOffset = CGSizeMake(0, 0.6);
+    self.hideCommentsButton.layer.shadowOpacity = 1;
+    self.hideCommentsButton.layer.shadowRadius = 0.6;
+    self.hideCommentsButton.clipsToBounds = NO;
     
     [Appearance initializeAppearanceDefaults];
     
